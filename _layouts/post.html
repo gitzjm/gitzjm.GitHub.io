@@ -15,7 +15,7 @@
         <div class="post-tags">
             {% if page.tags.size > 0 %}
             {% for tag in page.tags %}
-            <a href="{{ " tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
+            <a href='{{ " tags#" | append: tag | absolute_url }}' class="post-tag">{{ tag }}</a>
             {% endfor %}
             {% endif %}
         </div>
@@ -23,22 +23,18 @@
         <div class="post-meta">
             <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank"
                                                                                 rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
-            <time class="post-meta-item" datetime="{{ page.date | date:" %y-%m-%d
-            " }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
+            <time class="post-meta-item" datetime='{{ page.date | date:"%y-%m-%d" }}'><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
         </div>
     </div>
     {% if page.cover %}
     <div class="filter"></div>
-    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
+    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;"></div>
         {% endif %}
+
 </header>
 
 <div class="post-content visible">
-    <ul class="my-toc">
-        <div id="toc-btn">
-
-        </div>
-    </ul>
+    <ul class="my-toc section table-of-contents"></ul>
     {% if page.subtitle %}
     <h2 class="post-subtitle">{{ page.subtitle }}</h2>
     {% endif %}
@@ -117,7 +113,7 @@
 
     {% if site.livere %}
     <section class="post-footer-item comment">
-        <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}">
+        <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}"></div>
     </section>
     {% endif %}
 </section>
@@ -125,29 +121,6 @@
 {% include footer.html %}
 
 <script src="/assets/js/social-share.min.js"></script>
-<script>
-    socialShare('.social-share', {
-        sites: [
-        { % for i in site.social - share - items %
-    }
-    '{{ i }}'
-    {%
-        if forloop.last == false %}
-    ,
-    {%
-        endif %
-    }
-    {%
-        endfor %
-    }
-    ],
-    wechatQrcodeTitle: "分享到微信朋友圈",
-        wechatQrcodeHelper
-    :
-    '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
-    })
-    ;
-</script>
 
 {% if site.disqus %}
 <script>
@@ -170,7 +143,6 @@
     })();
 </script>
 {% endif %}
-
 {% if site.livere %}
 <script>
     (function (d, s) {
@@ -196,19 +168,55 @@
 
 
 <script>
-    // 生成左侧目录树,并添加滚动自动显示隐藏功能;
+    // // 生成左侧目录树,并添加滚动自动显示隐藏功能;
+    //
+    // $(function () {
+    //     toc = $("#markdown-toc");
+    //     if (toc) {
+    //         $(".my-toc").append(toc.html());
+    //         // $(".my-toc ul").addClass('markdown-toc')
+    //     }
+    //     else {
+    //         pass
+    //     }
+    // });
+    //
+    // $(function () {
+    //     //scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。
+    //     $(window).scroll(function () {
+    //         var scroHei = $(window).scrollTop();//滚动的高度
+    //         if (scroHei < 290) {
+    //             $('.my-toc').fadeOut(300);
+    //         }
+    //         else if (scroHei > 290 & scroHei < $(".post-content").height() + 290) {
+    //             $('.my-toc').fadeIn(300);
+    //         }
+    //         else {
+    //             $('.my-toc').fadeOut(300);
+    //         }
+    //     })
+    // })
 
-    $(function () {
-        toc = $("#markdown-toc");
-        if (toc) {
-            $(".my-toc").append(toc.html());
-            // $(".my-toc ul").addClass('markdown-toc')
+
+    $(document).ready(function () {
+        $('.scrollspy').scrollSpy();
+    });
+    hlist=$('.markdown-body h2,h3');
+    console.log(hlist);
+    hlist.each(function () {
+        $(this).addClass("section scrollspy");
+        console.log(this.id,this.tagName,$(this).text());
+        // var anchor='<a href=#'+this.id+'>'+$(this).text()+'</a>';
+        // console.log(anchor);
+        if (this.tagName==="H2"){
+            var anchor='<a href=#'+this.id+'>'+$(this).text()+'</a>';
+            $(".my-toc").append('<li>'+anchor+'</li>')
         }
         else {
-            pass
+            var anchor='<a href=#'+this.id+'>&nbsp;&nbsp;'+$(this).text()+'</a>';
+            $(".my-toc").append('<li>'+anchor+'</li>')
         }
-    });
-
+    })
     $(function () {
         //scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。
         $(window).scroll(function () {
@@ -224,7 +232,6 @@
             }
         })
     })
-
 </script>
 </body>
 

@@ -842,24 +842,34 @@ a {
 .post-content .post-subtitle:after {
     bottom: 0
 }
-.my-toc{
+
+.my-toc {
     /*background-color: cornflowerblue;*/
-    font-family: Merriweather-Light, -apple-system, Verdana, "PingFang SC", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    /*float: left;*/
-    list-style:none;
-    padding-left:20px;
+    /*font-family: Merriweather-Light, -apple-system, Verdana, "PingFang SC", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;*/
+    float: left;
+    list-style: none;
+    padding-left: 40px;
     position: fixed;
     display: none;
     top: 100px;
-    max-width: 280px;
+    width: 240px;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+.my-toc ul {
+    margin-left: 10px;
+}
+
 /*#toc-btn{*/
-    /*width: 20px;*/
-    /*height: 40px;*/
-    /*background: aliceblue;*/
-    /*top: 50px;*/
-    /*position: relative;*/
-    /*float: right;*/
+/*width: 20px;*/
+/*height: 40px;*/
+/*background: aliceblue;*/
+/*top: 50px;*/
+/*position: relative;*/
+/*float: right;*/
 /*}*/
 
 .markdown-body {
@@ -1544,4 +1554,27 @@ a {
         width: 695px;
         left: -100px
     }
+}
+
+.table-of-contents a {
+    display: inline-block;
+    font-weight: 300;
+    color: #757575;
+    padding-left: 20px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: .4;
+    display: inline-block;
+}
+
+.table-of-contents a:hover {
+    color: #a8a8a8;
+    padding-left: 19px;
+    border-left: 1px solid #b1dcfb;
+}
+
+.table-of-contents a.active {
+    font-weight: 500;
+    padding-left: 18px;
+    border-left: 2px solid #b1dcfb;
 }
