@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c012833-b881-4761-87ea-2d12a83ea231" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/_posts/2017-11-2-Django Rest Framework.md" afterPath="$PROJECT_DIR$/_posts/2017-11-2-Django Rest Framework.md" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/app.css" afterPath="$PROJECT_DIR$/_site/assets/css/app.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
@@ -114,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="1571" column="19" lean-forward="false" selection-start-line="1571" selection-start-column="19" selection-end-line="1571" selection-end-column="19" />
+            <state relative-caret-position="266">
+              <caret line="884" column="1" lean-forward="true" selection-start-line="884" selection-start-column="1" selection-end-line="884" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/_site/assets/css/materialize.css" />
         <option value="$PROJECT_DIR$/_includes/post-head.html" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
-        <option value="$PROJECT_DIR$/_site/assets/css/app.css" />
         <option value="$PROJECT_DIR$/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/_site/assets/css/app.css" />
       </list>
     </option>
   </component>
@@ -290,12 +290,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517899984609</updated>
       <workItem from="1517899986926" duration="3276000" />
-      <workItem from="1517905630556" duration="7448000" />
+      <workItem from="1517905630556" duration="7755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10724000" />
+    <option name="totallyTimeSpent" value="11031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -499,18 +499,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="1571" column="19" lean-forward="false" selection-start-line="1571" selection-start-column="19" selection-end-line="1571" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="1573" column="35" lean-forward="true" selection-start-line="1573" selection-start-column="35" selection-end-line="1573" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="884" column="1" lean-forward="true" selection-start-line="884" selection-start-column="1" selection-end-line="884" selection-end-column="1" />
           <folding />
         </state>
       </provider>

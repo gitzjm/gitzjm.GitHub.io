@@ -13,3 +13,10 @@ tags: Django
 
 ### 123
 
+~~~python
+def func():
+  return True
+~~~
+
+
+
