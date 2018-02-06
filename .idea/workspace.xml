@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c012833-b881-4761-87ea-2d12a83ea231" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-2-5-jekyll生成目录树.md" afterPath="$PROJECT_DIR$/_posts/2018-2-5-jekyll生成目录树.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/2017-11-2-Django Rest Framework.md" afterPath="$PROJECT_DIR$/_posts/2017-11-2-Django Rest Framework.md" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="1580" column="1" lean-forward="true" selection-start-line="1580" selection-start-column="1" selection-end-line="1580" selection-end-column="1" />
+            <state relative-caret-position="312">
+              <caret line="1573" column="35" lean-forward="true" selection-start-line="1573" selection-start-column="35" selection-end-line="1573" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -118,7 +117,7 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="335">
               <caret line="1571" column="19" lean-forward="false" selection-start-line="1571" selection-start-column="19" selection-end-line="1571" selection-end-column="19" />
               <folding />
             </state>
@@ -216,6 +215,19 @@
             <path>
               <item name="gitzjm.GitHub.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitzjm.GitHub.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gitzjm.GitHub.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gitzjm.GitHub.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gitzjm.GitHub.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gitzjm.GitHub.io" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -278,12 +290,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517899984609</updated>
       <workItem from="1517899986926" duration="3276000" />
-      <workItem from="1517905630556" duration="7149000" />
+      <workItem from="1517905630556" duration="7448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10425000" />
+    <option name="totallyTimeSpent" value="10724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -432,14 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="1571" column="19" lean-forward="false" selection-start-line="1571" selection-start-column="19" selection-end-line="1571" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -495,10 +499,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="1571" column="19" lean-forward="false" selection-start-line="1571" selection-start-column="19" selection-end-line="1571" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="1580" column="1" lean-forward="true" selection-start-line="1580" selection-start-column="1" selection-end-line="1580" selection-end-column="1" />
+        <state relative-caret-position="312">
+          <caret line="1573" column="35" lean-forward="true" selection-start-line="1573" selection-start-column="35" selection-end-line="1573" selection-end-column="35" />
           <folding />
         </state>
       </provider>
