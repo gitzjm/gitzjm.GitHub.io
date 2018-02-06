@@ -1570,12 +1570,12 @@ a {
 
 .table-of-contents a:hover {
     color: #a8a8a8;
-    padding-left: 19px;
+    padding-left: 21px;
     border-left: 1px solid #b1dcfb;
 }
 
 .table-of-contents a.active {
     /*font-weight: 500;*/
-    padding-left: 18px;
+    padding-left: 20px;
     border-left: 2px solid #b1dcfb;
 }

@@ -74,10 +74,10 @@ exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'R
 
 # Markdown
 markdown:    kramdown
-highlighter: Rouge
-kramdown:
-  input:  GFM
-  use_coderay: true
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
 
 # RSS
 RSS: false

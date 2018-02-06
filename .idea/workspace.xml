@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c012833-b881-4761-87ea-2d12a83ea231" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-2-5-jekyll生成目录树.md" afterPath="$PROJECT_DIR$/_posts/2018-2-5-jekyll生成目录树.md" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,13 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="post.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="186">
+              <caret line="222" column="42" lean-forward="false" selection-start-line="222" selection-start-column="36" selection-end-line="222" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5825#5853#0" expanded="false" />
                 <marker date="1517911216252" expanded="true" signature="117:295" ph="..." />
                 <marker date="1517911216252" expanded="true" signature="182:289" ph="..." />
                 <marker date="1517911216252" expanded="true" signature="7274:7280" ph=" " />
@@ -33,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="1568" column="1" lean-forward="false" selection-start-line="1568" selection-start-column="1" selection-end-line="1568" selection-end-column="1" />
+            <state relative-caret-position="431">
+              <caret line="1580" column="1" lean-forward="true" selection-start-line="1580" selection-start-column="1" selection-end-line="1580" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -133,6 +135,8 @@
       <find>na</find>
       <find>table-of-contents</find>
       <find>nav</find>
+      <find>color</find>
+      <find>scroll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,8 +149,8 @@
         <option value="$PROJECT_DIR$/_site/assets/css/materialize.css" />
         <option value="$PROJECT_DIR$/_includes/post-head.html" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
-        <option value="$PROJECT_DIR$/assets/css/app.css" />
         <option value="$PROJECT_DIR$/_site/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/assets/css/app.css" />
       </list>
     </option>
   </component>
@@ -203,11 +207,6 @@
               <item name="gitzjm.GitHub.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitzjm.GitHub.io" type="462c0819:PsiDirectoryNode" />
               <item name="_layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gitzjm.GitHub.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gitzjm.GitHub.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gitzjm.GitHub.io" type="b2602c69:ProjectViewProjectNode" />
@@ -279,12 +278,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517899984609</updated>
       <workItem from="1517899986926" duration="3276000" />
-      <workItem from="1517905630556" duration="5739000" />
+      <workItem from="1517905630556" duration="7149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9015000" />
+    <option name="totallyTimeSpent" value="10425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -328,6 +327,7 @@
           <caret line="148" column="11" lean-forward="false" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5825#5853#0" expanded="false" />
             <marker date="1517911216252" expanded="true" signature="117:295" ph="..." />
             <marker date="1517911216252" expanded="true" signature="182:289" ph="..." />
             <marker date="1517911216252" expanded="true" signature="7274:7280" ph=" " />
@@ -416,19 +416,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/assets/css/materialize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-42">
           <caret line="6872" column="0" lean-forward="false" selection-start-line="6872" selection-start-column="0" selection-end-line="6893" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="2248" column="79" lean-forward="false" selection-start-line="2248" selection-start-column="76" selection-end-line="2248" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="1571" column="19" lean-forward="false" selection-start-line="1571" selection-start-column="19" selection-end-line="1571" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="222" column="42" lean-forward="false" selection-start-line="222" selection-start-column="36" selection-end-line="222" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5825#5853#0" expanded="false" />
+            <marker date="1517911216252" expanded="true" signature="117:295" ph="..." />
+            <marker date="1517911216252" expanded="true" signature="182:289" ph="..." />
+            <marker date="1517911216252" expanded="true" signature="7274:7280" ph=" " />
+            <marker date="1517911216252" expanded="true" signature="7280:7286" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -440,7 +463,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/pageNav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -456,15 +487,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/materialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="2248" column="79" lean-forward="false" selection-start-line="2248" selection-start-column="76" selection-end-line="2248" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/pageNav.html">
+    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -474,31 +497,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="1568" column="1" lean-forward="false" selection-start-line="1568" selection-start-column="1" selection-end-line="1568" selection-end-column="1" />
+        <state relative-caret-position="431">
+          <caret line="1580" column="1" lean-forward="true" selection-start-line="1580" selection-start-column="1" selection-end-line="1580" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="1571" column="19" lean-forward="false" selection-start-line="1571" selection-start-column="19" selection-end-line="1571" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1517911216252" expanded="true" signature="117:295" ph="..." />
-            <marker date="1517911216252" expanded="true" signature="182:289" ph="..." />
-            <marker date="1517911216252" expanded="true" signature="7274:7280" ph=" " />
-            <marker date="1517911216252" expanded="true" signature="7280:7286" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
