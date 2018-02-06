@@ -1,0 +1,90 @@
+# Site settings 配置站点
+title: '赵俊明的个人博客'
+description: ''
+keyword: ''
+url: 'http://zjm9483.github.io' # your host
+
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
+
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2017
+
+# Author 配置博主信息
+author: '赵俊明'
+nickname: 'ZJM'
+bio: 'Python攻城师,热爱DL.'
+avatar: '/assets/img/profile.jpg'
+
+# Search
+search: true
+
+# Night mode
+nightMode: false
+
+# Comments
+disqus: false
+disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+livere: true
+livere_uid: MTAyMC8yODEwMC80Njcz
+
+# Reward 赞赏功能 by Ray-Eldath
+reward:
+  enable: true
+  reward_comment: '真诚赞赏 手有余香'
+  wechatpay: ''
+  alipay: ''
+
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'pink'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  email: 'mailto:ray.eldath@aol.com'
+  weibo: ''
+  juejin: ''
+  instagram: ''
+  github: '//github.com/gitzjm'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown:    kramdown
+highlighter: Rouge
+kramdown:
+  input:  GFM
+  use_coderay: true
+
+# RSS
+RSS: false
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
+
+# Plugins
+plugins: [jekyll-paginate]
