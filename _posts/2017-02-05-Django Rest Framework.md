@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Django Rest Framework (1)'
-subtitle: 'Django进阶之DjangoRestFramework'
-date: 2017-11-02
+subtitle: 'Django进阶之Django Rest Framework'
+date: 2018-02-05
 categories: 技术
 tags: Django
 ---
@@ -122,7 +122,7 @@ Web 应用程序最重要的 REST 原则是，客户端和服务器之间的交�
 
 ## 基于Django的REST
 
-urls:
+urls.py:
 
 ~~~python
 urlpatterns = [
@@ -130,7 +130,7 @@ urlpatterns = [
 ]
 ~~~
 
-views(CBV):
+views.py(CBV):
 
 ~~~python
 from django.views import View
