@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
       <change beforePath="$PROJECT_DIR$/_posts/2017-11-2-Django Rest Framework.md" afterPath="$PROJECT_DIR$/_posts/2017-11-2-Django Rest Framework.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-2-5-jekyll生成目录树.md" afterPath="$PROJECT_DIR$/_posts/2018-2-5-jekyll生成目录树.md" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -190,7 +191,7 @@
     </gulpfiles>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="267" />
     <option name="y" value="22" />
     <option name="width" value="1026" />
@@ -323,15 +324,15 @@
       <workItem from="1517899986926" duration="3276000" />
       <workItem from="1517905630556" duration="7942000" />
       <workItem from="1517975055574" duration="1633000" />
-      <workItem from="1517977579216" duration="6463000" />
+      <workItem from="1517977579216" duration="6979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19314000" />
+    <option name="totallyTimeSpent" value="19830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
