@@ -876,7 +876,8 @@ a {
     font-family: Merriweather-Light, -apple-system, Verdana, "PingFang SC", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     width: 720px;
     box-sizing: border-box;
-    padding: 0 0 32px
+    padding: 0 0 32px;
+    /*background: #b1dcfb;*/
 }
 
 .markdown-body .highlight {
@@ -1569,13 +1570,13 @@ a {
 }
 
 .table-of-contents a:hover {
-    color: #a8a8a8;
-    padding-left: 20px;
-    border-left: 1px solid #b1dcfb;
+    color: gainsboro;
+    /*padding-left: 20px;*/
+    border-left: 2px solid gainsboro;
 }
 
 .table-of-contents a.active {
-    font-weight: 500;
-    padding-left: 20px;
+    font-weight: 800;
+    padding-left: 19px;
     border-left: 2px solid #b1dcfb;
 }

@@ -1,27 +1,10 @@
----
-layout: post
-title: 'jekyll 根据h标签自动生成目录树'
-subtitle: '目录树'
-date: 2018-03-04
-categories: 技术
-tags: 前端开发
----
-
-找了半天没有找到心仪的文章toc插件,索性自己做了一个,根据jekyll生成的文章结构写的,由于锚对应的是h标签(jekyll生成的文章没有div),所以有点小bug...但是自己做的用着开心~略略略~
-
-> 本插件样式和滚动监听效果基于谷歌的materializecss框架实现~
->
-> http://www.materializecss.cn/index.html
-
-代码:
-```js
 //滚动监听基于谷歌的前端框架materializecss实现
 $(document).ready(function () {
     $('.scrollspy').scrollSpy();
 });
 //根据h2,h3,h4标签生成目录树
 var hlist=$('.markdown-body h2,h3,h4');
-var mytoc=$(".my-toc")//此处为toc生成位置
+var mytoc=$(".my-toc")
 hlist.each(function () {
     //给h标签添加materializecss的class属性以实现滚动监听
     $(this).addClass("section scrollspy");
@@ -72,7 +55,3 @@ $(function () {
         }
     })
 })
-```
-
-
-
