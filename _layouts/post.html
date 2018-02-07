@@ -202,10 +202,10 @@
         $('.scrollspy').scrollSpy();
     });
     hlist=$('.markdown-body h2,h3');
-    console.log(hlist);
+    // console.log(hlist);
     hlist.each(function () {
         $(this).addClass("section scrollspy");
-        console.log(this.id,this.tagName,$(this).text());
+        // console.log(this.id,this.tagName,$(this).text());
         // var anchor='<a href=#'+this.id+'>'+$(this).text()+'</a>';
         // console.log(anchor);
         if (this.tagName==="H2"){
@@ -218,11 +218,11 @@
         }
     })
 
-    $(function () {
-        if ($(window).width()<=720){
-            pass
-        }
-        else {
+    window.onresize=resizeBannerImage;//当窗口改变宽度时执行此函数
+    function resizeBannerImage()
+    {
+        var winW = $(window).width();
+        if( $(window).width()>800 ) {
             $(function () {
                 //scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。
                 $(window).scroll(function () {
@@ -238,24 +238,43 @@
                     }
                 })
             })
+    }
+        else {
+            $('.my-toc').fadeOut(300);
         }
-    })
-    // $(function () {
-    //     //scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。
-    //     $(window).scroll(function () {
-    //         var scroHei = $(window).scrollTop();//滚动的高度
-    //         if (scroHei < 290) {
-    //             $('.my-toc').fadeOut(300);
-    //         }
-    //         else if (scroHei > 290 & scroHei < $(".post-content").height() + 290) {
-    //             $('.my-toc').fadeIn(300);
-    //         }
-    //         else {
-    //             $('.my-toc').fadeOut(300);
-    //         }
-    //     })
-    // })
+    }
+
 </script>
+
+<!--<script>-->
+    <!--window.onresize=resizeBannerImage;//当窗口改变宽度时执行此函数-->
+    <!--function resizeBannerImage()-->
+    <!--{-->
+        <!--var winW = $(window).width();-->
+        <!--if( $(window).width() < 800 ) {-->
+            <!--$('.my-toc').attr("style","left:-10000px")-->
+        <!--}-->
+        <!--else {-->
+            <!--$('.my-toc').attr("style","left:0")-->
+        <!--}-->
+    <!--}-->
+
+    <!--$(function () {-->
+        <!--//scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。-->
+        <!--$(window).scroll(function () {-->
+            <!--var scroHei = $(window).scrollTop();//滚动的高度-->
+            <!--if (scroHei < 290) {-->
+                <!--$('.my-toc').fadeOut(300);-->
+            <!--}-->
+            <!--else if (scroHei > 290 & scroHei < $(".post-content").height() + 290) {-->
+                <!--$('.my-toc').fadeIn(300);-->
+            <!--}-->
+            <!--else {-->
+                <!--$('.my-toc').fadeOut(300);-->
+            <!--}-->
+        <!--})-->
+    <!--})-->
+<!--</script>-->
 </body>
 
 </html>
