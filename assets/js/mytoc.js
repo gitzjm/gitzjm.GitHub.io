@@ -1,6 +1,6 @@
 //滚动监听基于谷歌的前端框架materializecss实现
 $(document).ready(function () {
-    $('.scrollspy').scrollSpy();
+    $('.scrollspy').scrollSpy(scrollOffset=1000);
 });
 //根据h2,h3,h4标签生成目录树
 var hlist=$('.markdown-body h2,h3,h4');

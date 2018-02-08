@@ -28,7 +28,7 @@
     </div>
     {% if page.cover %}
     <div class="filter"></div>
-    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;"></div>
+    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
         {% endif %}
 
 </header>
@@ -103,7 +103,7 @@
             {% endif %}
         </div>
         {% endif %}
-    </section>
+    </section>`
 
     {% if site.disqus %}
     <section class="post-footer-item comment">
@@ -113,7 +113,7 @@
 
     {% if site.livere %}
     <section class="post-footer-item comment">
-        <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}"></div>
+        <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}">
     </section>
     {% endif %}
 </section>
