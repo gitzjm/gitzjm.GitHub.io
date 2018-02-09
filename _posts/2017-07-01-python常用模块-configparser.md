@@ -60,7 +60,9 @@ tags: python常用模块
 - time.asctime([t])：把一个表示时间的元组或者**struct_time**表示为这种形式：'**Sun Oct 1 12:04:38 201**'。如果没有参数，将会将time.localtime()作为参数传入。
 - time.ctime([secs])：把一个**时间戳**（按秒计算的浮点数）转化为**time.asctime()**的形式。如果参数未给或者为None的时候，将会默认time.time()为参数。它的作用相当于time.asctime(time.localtime(secs))。
 
-###2.格式化字符串对照：
+### 2.格式化字符串对照：
+
+
 
 	>%y 两位数的年份表示（00-99）
 	>%Y 四位数的年份表示（000-9999）
@@ -86,7 +88,11 @@ tags: python常用模块
 	>%Z 当前时区的名称
 	>%% %号本身 
 
-###3. 三种时间关系图
+
+
+
+
+### 3. 三种时间关系图
 
 ![time-convert](C:\Users\JM\Desktop\time-convert.png)
 
@@ -94,7 +100,11 @@ tags: python常用模块
 
 相比于time模块，datetime模块的接口更加直观容易调用
 
+
+
 ###1.datetime中的类
+
+
 
 >datetime.date：表示日期的类。常用的属性有year, month, day；
 >
@@ -106,9 +116,13 @@ tags: python常用模块
 >
 >datetime.tzinfo：与时区有关的相关信息。
 
-###2.重要的方法
 
-####datetime.datetime.now()
+
+### 2.重要的方法
+
+
+
+#### datetime.datetime.now()
 
 ~~~python
 d=datetime.datetime.now() #返回当前的datetime日期类型
