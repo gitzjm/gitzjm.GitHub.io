@@ -47,54 +47,55 @@ tags: python常用模块
 
 ### 1.time模块中的方法：
 
-- time.time()：返回当前时间的时间戳。
-- time.sleep(secs)：线程推迟指定的时间运行。单位为秒。
-- time.localtime([secs])：将一个**时间戳**转换为当前时区的**struct_time**。secs参数未提供，则以当前时间为准。
-- time.gmtime([secs])：和localtime()方法类似，gmtime()方法是将一个**时间戳**转换为**UTC时区（0时区）**的**struct_time**。
-- time.mktime(t)：将一个**struct_time**转化为**时间戳**。
-- time.strftime(format[, t])：把一个代表时间的**元组或者struct_time**（如由time.localtime()和time.gmtime()返回）转化为**格式化的时间字符串**。如果t未指定，将传入time.localtime()。
-  - 举例：time.strftime("%Y-%m-%d %X", time.localtime()) #输出'2018-2-01 21:11:32'
-- time.strptime(string[, format])：把一个**格式化时间字符串**转化为**struct_time**。实际上它和strftime()是逆操作。
-  - 举例：time.strptime('2017-10-3 17:54',"%Y-%m-%d %H:%M") #输出 time.struct_time(tm_year=2017, tm_mon=10, tm_mday=3, tm_hour=17, tm_min=54, tm_sec=0, tm_wday=1, tm_yday=276, tm_isdst=-1)
+>- time.time()：返回当前时间的时间戳。
+>- time.sleep(secs)：线程推迟指定的时间运行。单位为秒。
+>- time.localtime([secs])：将一个**时间戳**转换为当前时区的**struct_time**。secs参数未提供，则以当前时间为准。
+>- time.gmtime([secs])：和localtime()方法类似，gmtime()方法是将一个**时间戳**转换为**UTC时区（0时区）**的**struct_time**。
+>- time.mktime(t)：将一个**struct_time**转化为**时间戳**。
+>- time.strftime(format[, t])：把一个代表时间的**元组或者struct_time**（如由time.localtime()和time.gmtime()返回）转化为**格式化的时间字符串**。如果t未指定，将传入time.localtime()。
+>  - 举例：time.strftime("%Y-%m-%d %X", time.localtime()) #输出'2018-2-01 21:11:32'
+>- time.strptime(string[, format])：把一个**格式化时间字符串**转化为**struct_time**。实际上它和strftime()是逆操作。
+>  - 举例：time.strptime('2017-10-3 17:54',"%Y-%m-%d %H:%M") #输出 time.struct_time(tm_year=2017, tm_mon=10, tm_mday=3, tm_hour=17, tm_min=54, tm_sec=0, tm_wday=1, tm_yday=276, tm_isdst=-1)
+>- time.asctime([t])：把一个表示时间的元组或者**struct_time**表示为这种形式：'**Sun Oct 1 12:04:38 201**'。如果没有参数，将会将time.localtime()作为参数传入。
+>- time.ctime([secs])：把一个**时间戳**（按秒计算的浮点数）转化为**time.asctime()**的形式。如果参数未给或者为None的时候，将会默认time.time()为参数。它的作用相当于time.asctime(time.localtime(secs))。
 
-- time.asctime([t])：把一个表示时间的元组或者**struct_time**表示为这种形式：'**Sun Oct 1 12:04:38 201**'。如果没有参数，将会将time.localtime()作为参数传入。
-- time.ctime([secs])：把一个**时间戳**（按秒计算的浮点数）转化为**time.asctime()**的形式。如果参数未给或者为None的时候，将会默认time.time()为参数。它的作用相当于time.asctime(time.localtime(secs))。
+
 
 ### 2.格式化字符串对照：
 
 
 
-	>%y 两位数的年份表示（00-99）
-	>%Y 四位数的年份表示（000-9999）
-	>%m 月份（01-12）
-	>%d 月内中的一天（0-31）
-	>%H 24小时制小时数（0-23）
-	>%I 12小时制小时数（01-12） 
-	>%M 分钟数（00=59）
-	>%S 秒（00-59）
-	>
-	>%a 本地简化星期名称
-	>%A 本地完整星期名称
-	>%b 本地简化的月份名称
-	>%B 本地完整的月份名称
-	>%c 本地相应的日期表示和时间表示
-	>%j 年内的一天（001-366）
-	>%p 本地A.M.或P.M.的等价符
-	>%U 一年中的星期数（00-53）星期天为星期的开始
-	>%w 星期（0-6），星期天为星期的开始
-	>%W 一年中的星期数（00-53）星期一为星期的开始
-	>%x 本地相应的日期表示
-	>%X 本地相应的时间表示
-	>%Z 当前时区的名称
-	>%% %号本身 
-
-
+```python
+ %y 两位数的年份表示（00-99）
+ %Y 四位数的年份表示（000-9999）
+ %m 月份（01-12）
+ %d 月内中的一天（0-31）
+ %H 24小时制小时数（0-23）
+ %I 12小时制小时数（01-12） 
+ %M 分钟数（00=59）
+ %S 秒（00-59）
+ 
+ %a 本地简化星期名称
+ %A 本地完整星期名称
+ %b 本地简化的月份名称
+ %B 本地完整的月份名称
+ %c 本地相应的日期表示和时间表示
+ %j 年内的一天（001-366）
+ %p 本地A.M.或P.M.的等价符
+ %U 一年中的星期数（00-53）星期天为星期的开始
+ %w 星期（0-6），星期天为星期的开始
+ %W 一年中的星期数（00-53）星期一为星期的开始
+ %x 本地相应的日期表示
+ %X 本地相应的时间表示
+ %Z 当前时区的名称
+ %% %号本身 
+```
 
 
 
 ### 3. 三种时间关系图
 
-![time-convert](C:\Users\JM\Desktop\time-convert.png)
+![time-convert](https://i.loli.net/2018/02/09/5a7d9f016422f.png)
 
 ## 三.datetime模块
 
@@ -102,7 +103,7 @@ tags: python常用模块
 
 
 
-###1.datetime中的类
+### 1.datetime中的类
 
 
 
@@ -132,7 +133,7 @@ d.year
 d.timetuple()
 ~~~
 
-####datetime.date.fromtimesatmp()
+#### datetime.date.fromtimesatmp()
 
 传入一个时间戳，转换为datetime类型
 
