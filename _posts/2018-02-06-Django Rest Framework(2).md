@@ -9,7 +9,7 @@ tags: Django
 
 ## 基于Django Rest Framework实现
 
-### 1.基本流程
+### 一.基本流程
 
 urls.py
 
@@ -46,7 +46,7 @@ class TestView(APIView):
 
 ~~~
 
-### 2.源码剖析
+### 二.源码剖析
 
 1.view中视图类继承了APIView,URL请求进入时会先触发APIView类中的dispatch函数,dispatch函数做了如下操作:
 
@@ -65,10 +65,12 @@ class TestView(APIView):
 
 - 使用反射将不同的method请求返回为相应的方法
 
-  源码中APIVier的dispatch()函数
+dispatch()源码：
 
   ```python
-  def dispatch(self, request, *args, **kwargs):
+  class APIView():
+    ...
+    def dispatch(self, request, *args, **kwargs):
       """
       `.dispatch()` is pretty much the same as Django's regular dispatch,
       but with extra hooks for startup, finalize, and exception handling.

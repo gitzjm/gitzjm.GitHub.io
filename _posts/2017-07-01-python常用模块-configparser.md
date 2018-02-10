@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'python常用模块-time,datetime'
-subtitle: '时间相关的模块'
+title: 'python常用模块-1'
+subtitle: 'time,datetime'
 date: 2017-07-01
 categories: 技术
 tags: python常用模块
