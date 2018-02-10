@@ -38,7 +38,7 @@ function resizeBannerImage()
 }
 //滚动到文章正文目录树出现
 $(function () {
-    if ($(window).width()<800) {
+    if ($(window).width()>800) {
         //scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。
         $(window).scroll(function () {
             var scroHei = $(window).scrollTop();//滚动的高度
