@@ -36,16 +36,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-07-01-python常用模块-configparser.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-07-01-python常用模块-configparser.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/mytoc.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+              <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
               <folding>
                 <marker date="1518252163108" expanded="true" signature="573:579" ph=" " />
                 <marker date="1518252163108" expanded="true" signature="579:585" ph=" " />
@@ -316,12 +306,12 @@
       <workItem from="1518055719924" duration="1500000" />
       <workItem from="1518140755094" duration="726000" />
       <workItem from="1518251916326" duration="761000" />
-      <workItem from="1518252728960" duration="560000" />
+      <workItem from="1518252728960" duration="1158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23377000" />
+    <option name="totallyTimeSpent" value="23975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -711,7 +701,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/mytoc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding>
             <marker date="1518252163108" expanded="true" signature="573:579" ph=" " />
             <marker date="1518252163108" expanded="true" signature="579:585" ph=" " />
