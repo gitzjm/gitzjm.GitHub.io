@@ -1,11 +1,13 @@
 ---
 layout: post
 title: 'ubuntu安装和配置rabbitmq'
-subtitle: ''
+subtitle: 'rabbitmq安装和简单的配置'
 date: 2018-02-21
 categories: 技术
 tags: linux
 ---
+
+## ubuntu下安装
 
 **1**、使用此命令进行rabbitmq-server的安装（包括依赖包）
 
@@ -61,9 +63,10 @@ vi /etc/rabbitmq/rabbitmq.conf
 
 
 
-**RabbitMQ服务端使用**
+## RabbitMQ配置和使用
 
-1）. 服务器启动与关闭
+### 1）. 服务器启动与关闭
+
 启动: 
 
 ```Shell
@@ -80,7 +83,7 @@ rabbitmqctl stop
 若单机有多个实例，则在rabbitmqctlh后加–n 指定名称
 ```
 
-2）. 插件管理
+### 2）. 插件管理
 
 ```Shell
 开启某个插件：
@@ -96,7 +99,7 @@ rabbitmq-pluginsdisablexxx
 
 ```
 
-3）.virtual_host管理
+### 3）.virtual_host管理
 
 ```Shell
 新建virtual_host: rabbitmqctladd_vhost xxx
@@ -106,7 +109,7 @@ rabbitmq-pluginsdisablexxx
 
 
 
-4）. 用户管理
+### 4）. 用户管理
 
 ```Shell
 新建用户：rabbitmqctl add_user xxxpwd
@@ -116,7 +119,7 @@ rabbitmq-pluginsdisablexxx
 Tag可以为 administrator,monitoring, management
 ```
 
-5）. 权限管理
+### 5）. 权限管理
 
 ```Shell
 权限设置：set_permissions [-pvhostpath] {user} {conf} {write} {read}
@@ -134,7 +137,7 @@ Read
 
 
 
-6）. 获取服务器状态信息
+### 6）. 获取服务器状态信息
 
 ```Shell
 服务器状态：rabbitmqctl status
@@ -154,7 +157,7 @@ rabbimq-plugins
 http://www.rabbitmq.com/man/rabbitmq-plugins.1.man.html
 ```
 
-系统命令
+### 系统命令
 
 ```Shell
 卸载
