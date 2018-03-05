@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 'Ubuntu下Redis下的安装和使用'
-subtitle: 'Django进阶之Django Rest Framework'
-date: 2018-02-06
+subtitle: 'Redis'
+date: 2018-02-28
 categories: 技术
-tags: Django
+tags: Redis
 ---
 
 安装
