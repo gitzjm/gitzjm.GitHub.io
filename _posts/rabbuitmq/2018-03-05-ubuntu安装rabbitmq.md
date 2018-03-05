@@ -4,7 +4,7 @@ title: 'ubuntu安装和配置rabbitmq'
 subtitle: 'rabbitmq安装和简单的配置'
 date: 2018-02-21
 categories: 技术
-tags: linux
+tags: linux RabbitMQ
 ---
 
 ## ubuntu下安装
@@ -31,10 +31,10 @@ rabbitmqctl add_user zjm zjm1234
 rabbitmqctl set_user_tags zjm  administrator
 ~~~
 
-同时为openstack用户设置读写等权限
+同时为zjm用户设置读写等权限
 
 ```shell
-rabbitmqctl set_permissions openstack ".*" ".*" ".*"1
+rabbitmqctl set_permissions zjm ".*" ".*" ".*"1
 ```
 
 **3**、安装RabbitMQ监控管理插件进行RabbitMQ的管理，插件rabbitmq_management启动成功后就可以通过web页面进行RabbitMQ的监控和管理。
