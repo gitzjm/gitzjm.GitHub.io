@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'ubuntu安装和配置rabbitmq'
+title: 'ubuntu安装和配置RabbitMQ'
 subtitle: 'rabbitmq安装和简单的配置'
-date: 2018-02-21
+date: 2018-03-04
 categories: 技术
 tags: linux RabbitMQ
 ---
