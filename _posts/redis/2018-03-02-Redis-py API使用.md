@@ -62,9 +62,7 @@ print(r.get('foo'))
 
 #### String
 
-String操作，Redis中的String在内存中按照一个name对应一个value来存储。如图：
-
-![img](https://images2015.cnblogs.com/blog/425762/201602/425762-20160222213200645-359371350.png)
+String操作，Redis中的String在内存中按照一个name对应一个value来存储。
 
 set(name, value, ex=None, px=None, nx=False, xx=False)
 
@@ -208,12 +206,6 @@ append(key, value)
 
 #### Hash
 
-Hash操作，redis中Hash在内存中的存储格式如下图：
-
-![img](https://images2015.cnblogs.com/blog/425762/201602/425762-20160223115506630-113443460.png)
-
-
-
 hset(name, key, value)
 
 ~~~Python
@@ -317,9 +309,7 @@ hscan_iter(name, match=None, count=None)
 
 #### List
 
-List操作，redis中的List在在内存中按照一个name对应一个List来存储。如图：
-
-![img](https://images2015.cnblogs.com/blog/425762/201602/425762-20160223172249115-189393001.png)
+List操作，redis中的List在在内存中按照一个name对应一个List来存储。
 
 lpush(name,values)
 
@@ -708,7 +698,7 @@ pipe.set('role', 'sb')
 pipe.execute()
 ~~~
 
-### 发布订阅![img](https://images2015.cnblogs.com/blog/425762/201601/425762-20160121152411125-1838441844.png)
+### 发布订阅
 
 发布者：服务器
 
