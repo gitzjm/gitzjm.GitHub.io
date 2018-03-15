@@ -11,7 +11,7 @@ hlist.each(function () {
     //在"my-toc"标签中生成目录树
     if (this.tagName==="H2"){
         //锚连接
-        anchor='<a name='+this.id+'>'+$(this).text()+'</a>';
+        anchor='<a href=#'+this.id+'>'+$(this).text()+'</a>';
         //添加列表标签
         mytoc.append('<li>'+anchor+'</li>')
     }
