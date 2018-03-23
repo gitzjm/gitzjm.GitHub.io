@@ -2,7 +2,7 @@
 title: '赵俊明的个人博客'
 description: ''
 keyword: ''
-url: 'http://zjm9483.github.io' # your host
+url: 'http://www.zhaojunming.com' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
@@ -30,7 +30,7 @@ nightMode: false
 
 # Comments
 disqus: false
-disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+disqus_url: ''
 
 livere: true
 livere_uid: MTAyMC8yODEwMC80Njcz
@@ -57,11 +57,11 @@ postPatterns: 'circuitBoard'
 
 # SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  email: 'mailto:ray.eldath@aol.com'
+  email: ''
   weibo: ''
   juejin: ''
   instagram: ''
-  github: '//github.com/gitzjm'
+  github: ''
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
